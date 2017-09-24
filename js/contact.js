@@ -19,7 +19,7 @@ function requiredFilledIn(){
   }
 }
 
-$("#form span").hide()0;
+$("#form span").hide();
 $("input, textarea").focus(function(){
   $(this).next().fadeIn("slow");
 }).blur(function(){

@@ -5,7 +5,7 @@ body {
 	font-weight: 100;
 	font-size: 1.125em;
 	color: #faf3bc;
-	background: #420600 url('img/bg-texture.jpg') repeat;
+	background: #420600 url('../img/bg-texture.jpg') repeat;
 }
 
 a {
@@ -59,7 +59,7 @@ hr {
 	margin: 40px 0;
 	color: #faf3bc;
 	background-color: #4fb69f;
-	/*background: #4fb69f url('img/texture.png') no-repeat right top;*/
+	/*background: #4fb69f url('../img/texture.png') no-repeat right top;*/
 	border-radius: 25px;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -113,7 +113,7 @@ btn:hover {
 		border: 0;
 		font-weight: 100;
 		font-size: .75em;
-		background: #b22316 url('texture.png') no-repeat right top;;
+		background: #b22316 url('../img/texture.png') no-repeat right top;;
 		border-radius: 25px;
 		-webkit-border-radius: 25px;
 		-moz-border-radius: 25px;
