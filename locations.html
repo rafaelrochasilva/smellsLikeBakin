@@ -3,9 +3,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Smells Like Bakin' Cupcake Company</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/application.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/navigation_bar.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/buttons.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <script src="external/matchmedia.js"></script>
     <script src="js/picturefill.js"></script>
@@ -13,13 +15,11 @@
   </head>
   <body>
     <div class="container clearfix">
-      <div id="logo" class="grid_4">
-        <object data="img/logo.svg" type="image/svg+xml" class="logo">
-          <a href="logo.svg"></a>
-        </object>
+      <div class="main-logo grid_4">
+        <object class="img-container" data="img/logo.svg" type="image/svg+xml" class="logo"> </object>
       </div>
 
-      <div id="nav" class="grid_8 omega" >
+      <div class="nav grid_8 omega">
         <ul>
           <li class="about"><a href="index.html">About</a></li>
           <li class="pricing"><a href="pricing.html">Cupcakes & Prices</a></li>
@@ -29,7 +29,7 @@
       </div>
 
       <div class="grid_12">
-        <h1 class="hero">
+        <h1 class="tera hero">
           We're kicking taste buds in to high gear from the west to the east 
           coast with our featured avacodo chocolate cupcake.
         </h1>
@@ -39,11 +39,11 @@
         <div id="map"></div>
 
         <div class="grid_6">
-          <h2>Orlando Store</h2>
+          <h2 class="giga">Orlando Store</h2>
           <p>
-            Local: <span class="contact">407-555-5555</span><br>
-            Toll Free: <span class="contact">1-800-CUP-CAKE</span><br>
-            Email us: <a href="#">bakeon@smellslikebakin.com</a>
+            Local: <span class="phone">407-555-5555</span><br>
+            Toll Free: <span class="phone">1-800-CUP-CAKE</span><br>
+            Email us: <a class="avocato" href="#">bakeon@smellslikebakin.com</a>
           </p>
           <address>
             622 E Washington Street, Suite 240<br>
@@ -51,11 +51,11 @@
           </address>
         </div>
         <div class="grid_6 omega">
-          <h2>Portland Store</h2>
+          <h2 class="giga">Portland Store</h2>
           <p>
-            Local: <span class="contact">503-555-5555</span><br>
-            Toll Free: <span class="contact">1-800-CUP-CAKE</span><br>
-            Email us: <a href="#">bakeon@smellslikebakin.com</a>
+            Local: <span class="phone">503-555-5555</span><br>
+            Toll Free: <span class="phone">1-800-CUP-CAKE</span><br>
+            Email us: <a class="avocato" href="#">bakeon@smellslikebakin.com</a>
           </p>
           <address>
             70 Northwest Couch Street<br>
@@ -64,9 +64,9 @@
         </div>
       </div>
 
-      <div id="footer" class="grid_12">
-        <div id="about" class="grid_7">
-          <h2>Inside the Kitchen</h2>
+      <div class="footer grid_12">
+        <div class="grid_7">
+          <h2 class="giga">Inside the Kitchen</h2>
           <p>
             Smells Like Bakin’ started out in the garage of the husband wife 
             duo Allison &amp; Joseph. Allison is the baker, and Joseph found a 
@@ -79,11 +79,11 @@
           </p>
         </div>
 
-        <div id="contact" class="grid_5 omega">
-          <h2>Get Bakin’ with Us</h2>
+        <div class="grid_5 omega">
+          <h2 class="giga">Get Bakin’ with Us</h2>
           <p>
-            Call us: <span>1-800-CUP-CAKE</span><br>
-            Email us: <a href="#">bakeon@smellslikebakin.com</a>
+            Call us: <span class="phone">1-800-CUP-CAKE</span><br>
+            Email us: <a class="avocato" href="#">bakeon@smellslikebakin.com</a>
           </p>
 
           <p>
@@ -91,16 +91,16 @@
             Twitter, and even take requests!
           </p>
 
-          <object data="img/facebook.svg" type="image/svg+xml">
+          <object class="img-container" data="img/facebook.svg" type="image/svg+xml">
             <a href="facebook.svg"></a>
           </object>
 
-          <object data="img/twitter.svg" type="image/svg+xml">
+          <object class="img-container" data="img/twitter.svg" type="image/svg+xml">
             <a href="twitter.svg"></a>
           </object>
         </div>
 
-        <div id="copyright" class="grid_12">
+        <div class="copyright grid_12">
           <p>© 2012 Smells Like Bakin' Cupcake Company. All Rights Reserved.</p>
         </div>
       </div>

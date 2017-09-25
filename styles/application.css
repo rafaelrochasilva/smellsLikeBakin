@@ -1,0 +1,141 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  font-size: 1.125em;
+  color: #faf3bc;
+  background: #420600 url('../img/bg-texture.jpg') repeat;
+}
+
+.img-container img,
+.img-container object {
+  max-width: 100%;
+}
+
+.tera {
+  font-size: 1.750em;
+  font-weight: 100;
+  letter-spacing: -1.5px;
+}
+
+.giga {
+  font-weight: 100;
+  font-size: 1.500em;
+  color: #b4c34f;
+}
+
+.mega {
+  font-weight: 100;
+  font-size: 1.125em;
+  color: #ed6c85;
+}
+
+.avocato {
+  color: #4fb69f;
+  text-decoration: none;
+}
+
+.hero {
+  font-size: 2.75em;
+  line-height: 1.15em;
+}
+
+.intro {
+  margin: 0 0 5% 0;
+}
+
+.featured-cupcake img {
+  box-sizing: border-box;
+  background-color: #faf3bc;
+  padding: 8px;
+  margin: 0 0 5% 0;
+}
+
+.cupcake {
+  padding: 4% 0 0 0;
+}
+
+.cupcake img {
+  box-sizing: border-box;
+  background-color: #faf3bc;
+  padding: 8px;
+}
+
+.cupcake p {
+  margin: 3% 0;
+}
+
+.footer {
+  margin-top: 2%;
+  padding: 4% 0;
+  border-top: 6px solid #2a0400;
+}
+
+.phone {
+  color: #b22316;
+  font-weight: 600;
+  float: none;
+}
+
+.copyright {
+  border-top: 8px solid #2a0400;
+  padding: 2% 0;
+  margin: 2% 0;
+  text-align: center;
+}
+
+/* Larger ----------- */
+@media screen and (max-width: 1024px) {
+  .main-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-logo object {
+    max-width:  55%;
+  }
+}
+
+/* Medium ------------ */
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 100%; 
+  }
+
+  .intro h1 {
+    margin:  0 0 5% 0;
+  }
+
+  .intro-img {
+    display: none;
+  }
+}
+
+/* Smaller ----------- */
+@media screen and (max-width : 650px) {
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12 {
+    width:100%;
+  }
+
+  .main-logo object {
+    max-width: 100%;
+  }
+
+  .intro, #about {
+    display: none;
+  }
+
+  .featured-cupcake {
+    margin: 5% 0;
+  }
+}

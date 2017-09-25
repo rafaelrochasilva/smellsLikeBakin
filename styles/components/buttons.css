@@ -1,0 +1,48 @@
+.btn {
+  padding: 15px 30px;
+  margin: 40px 0;
+  color: #faf3bc;
+  background: #4fb69f url('../../img/texture.png') no-repeat right top;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #4cc4a7;
+}
+
+.btn-small {
+  float: left;
+  margin: 2% 0;
+  border: 0;
+  padding: 10px 25px;
+  color: #faf3bc;
+  font-size: .75em;
+  background-color: #b0240f;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-order-now {
+  padding: 10px 25px;
+  color: #faf3bc;
+  font-size: .75em;
+  background-color: #b22316;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-order-now:hover {
+  background-color: #c62718;
+  text-decoration: none;
+}

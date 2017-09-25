@@ -3,9 +3,12 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Smells Like Bakin' Cupcake Company</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/application.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/navigation_bar.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/buttons.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/form.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <script src="external/matchmedia.js"></script>
     <script src="js/picturefill.js"></script>
@@ -13,13 +16,11 @@
   </head>
   <body>
     <div class="container clearfix">
-      <div id="logo" class="grid_4">
-        <object data="img/logo.svg" type="image/svg+xml" class="logo">
-          <a href="logo.svg"></a>
-        </object>
+      <div class="main-logo grid_4">
+        <object class="img-container" data="img/logo.svg" type="image/svg+xml" class="logo"> </object>
       </div>
 
-      <div id="nav" class="grid_8 omega" >
+      <div class="nav grid_8 omega">
         <ul>
           <li class="about"><a href="index.html">About</a></li>
           <li class="pricing"><a href="pricing.html">Cupcakes & Prices</a></li>
@@ -29,48 +30,48 @@
       </div>
 
       <div class="grid_12">
-        <h1 class="hero">
+        <h1 class="tera hero">
           We have a wide variety of delicious desserts that are sure to take 
           you by surprise!
         </h1>
       </div>
 
-      <div id="form" class="grid_12 omega">
-        <h2>Contact Smells Like Bakin'</h2>
-        <form action="contact.php" method="post">
-          <p>
-            <label for="name">Name:</label>
-            <input name="name" id="name" type="text" class="required">
+      <div class="grid_12 omega">
+        <h2 class="giga">Contact Smells Like Bakin'</h2>
+        <form class="mail-form" action="contact.php" method="post">
+          <p class="grid_12">
+            <label class="grid_12" for="name">Name:</label>
+            <input class="grid_12" name="name" id="name" type="text">
             <span>Please enter your name</span>
           </p>
 
-          <p>
-            <label for="email">Email:</label>
-            <input name="email" id="email" type="text" class="required"> 
+          <p class="grid_12">
+            <label class="grid_12" for="email">Email:</label>
+            <input class="grid_12" name="email" id="email" type="text">
             <span>Please enter a valid email address</span>
           </p>
 
-          <p>
-            <label for="subject">Subject:</label>
-            <input name="subject" id="subject" type="text"> 
+          <p class="grid_12">
+            <label class="grid_12" for="subject">Subject:</label>
+            <input class="grid_12" name="subject" id="subject" type="text"> 
             <span>Please enter your subject</span>
           </p>
 
-          <p>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" class="required"></textarea> 
+          <p class="grid_12">
+            <label class="grid_12" for="message">Message</label>
+            <textarea class="grid_12" name="message" id="message"></textarea>
             <span>Please enter your message</span>
           </p>
 
-          <p class="submit">
-            <input type="submit" value="Submit" class="btn-submit">
+          <p>
+            <input type="submit" value="Submit" class="btn">
           </p>
         </form>
       </div>
 
-      <div id="footer" class="grid_12">
+      <div class="footer grid_12">
         <div id="about" class="grid_7">
-          <h2>Inside the Kitchen</h2>
+          <h2 class="giga">Inside the Kitchen</h2>
           <p>
             Smells Like Bakin’ started out in the garage of the husband wife 
             duo Allison &amp; Joseph. Allison is the baker, and Joseph found a 
@@ -81,11 +82,11 @@
           <p><a href="#" class="btn-small">Read More</a></p>
         </div>
 
-        <div id="contact" class="grid_5 omega">
-          <h2>Get Bakin’ with Us</h2>
+        <div class="grid_5 omega">
+          <h2 class="giga">Get Bakin’ with Us</h2>
           <p>
-            Call us: <span class="contact">1-800-CUP-CAKE</span><br>
-            Email us: <a href="#">bakeon@smellslikebakin.com</a>
+            Call us: <span class="phone">1-800-CUP-CAKE</span><br>
+            Email us: <a class="avocato" href="#">bakeon@smellslikebakin.com</a>
           </p>
 
           <p>
@@ -93,16 +94,16 @@
             Twitter, and even take requests!
           </p>
 
-          <object data="img/facebook.svg" type="image/svg+xml">
+          <object class="img-container" data="img/facebook.svg" type="image/svg+xml">
             <a href="facebook.svg"></a>
           </object>
 
-          <object data="img/twitter.svg" type="image/svg+xml">
+          <object class="img-container" data="img/twitter.svg" type="image/svg+xml">
             <a href="twitter.svg"></a>
           </object>
         </div>
 
-        <div id="copyright" class="grid_12">
+        <div class="copyright grid_12">
           <p>© 2012 Smells Like Bakin' Cupcake Company. All Rights Reserved.</p>
         </div>
       </div>
