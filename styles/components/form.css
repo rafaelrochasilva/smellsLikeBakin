@@ -1,0 +1,48 @@
+.mail-form label,
+.mail-form input,
+.mail-form textarea,
+.mail-form span {
+  float: left;
+}
+
+.mail-form label {
+  margin: 1% 0;
+}
+
+.mail-form input[type=text],
+.mail-form textarea {
+  background-color: #2a0400;
+  color: #faf3bc;
+  padding: 1%;
+  border: 0;
+}
+
+.mail-form input:focus,
+.mail-form textarea:focus {
+  outline: none;
+  border: 0;
+}
+
+.mail-form textarea {
+  height: 150px;
+}
+
+.mail-form span {
+  padding: 8px 10px;
+  background: #faf3bc;
+  color:#420600;
+}
+
+.mail-form span.valid {
+  background-color: #c0ce51;
+  color: #faf3bc;
+}
+
+.mail-form span.error {
+  background-color: #b0240f;
+  color: #faf3bc;
+}
+
+.mail-form input[disabled=disabled] {
+  background-color: #333;
+}
