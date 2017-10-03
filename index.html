@@ -30,7 +30,7 @@
       <div id="intro-slider">
         <div class="grid_12 omega">
           <div class="intro grid_9">
-            <h1 class="tera fittext">
+            <h1 class="tera" data-fittext>
               Opposites really do attract, especially in our kitchen! We 
               combine unexpected flavors that melt together to create ironically
               delicious desserts.
@@ -47,7 +47,7 @@
 
         <div class="grid_12 omega">
           <div class="intro grid_8">
-            <h1 class="tera fittext">
+            <h1 class="tera" data-fittext>
               We're kicking taste buds in to high gear from the west to the 
               east coast with our featured avacodo chocolate cupcake.
             </h1>
@@ -70,8 +70,11 @@
           flavors will kick your taste buds into fiesta mode!
         </p>
 
-        <div id="featured-video">
-          <iframe src="http://player.vimeo.com/video/50610288?title=0&amp;byline=0&amp;portrait=0" width="400" height="275" frameborder="0"></iframe>
+        <div data-featured-video>
+          <iframe
+            src="http://player.vimeo.com/video/50610288?title=0&amp;byline=0&amp;portrait=0"
+            width="400" height="275" frameborder="0"
+          ></iframe>
         </div>
       </div>
 
@@ -82,19 +85,19 @@
           and <a class="avocato" href="#">Jalapeño So Spicy</a>.
         </p>
 
-        <div class="img-container" data-picture data-alt="Bacon Me Crazy">
-          <div data-src="img/cupcakes/bacon-small.jpg"></div>
-          <div data-src="img/cupcakes/bacon-medium.jpg" data-media="(min-width: 400px)"></div>
-          <div data-src="img/cupcakes/bacon-large.jpg" data-media="(min-width: 800px)"></div>
-          <div data-src="img/cupcakes/bacon-extralarge.jpg" data-media="(min-width: 1000px)"></div>
-        </div>
+        <picture class="img-container">
+          <source srcset="img/cupcakes/bacon-extralarge.jpg" media="(min-width: 1000px)">
+          <source srcset="img/cupcakes/bacon-large.jpg" media="(min-width: 860px)">
+          <source srcset="img/cupcakes/bacon-medium.jpg" media="(min-width: 650px)">
+          <img srcset="img/cupcakes/bacon-small.jpg" alt="bacon cupcake">
+        </picture>
 
-        <div class="img-container" data-picture data-alt="Spicy Lime">
-          <div data-src="img/cupcakes/lime-small.jpg"></div>
-          <div data-src="img/cupcakes/lime-medium.jpg" data-media="(min-width: 400px)"></div>
-          <div data-src="img/cupcakes/lime-large.jpg" data-media="(min-width: 800px)"></div>
-          <div data-src="img/cupcakes/lime-extralarge.jpg" data-media="(min-width: 1000px)"></div>
-        </div>
+        <picture class="img-container">
+          <source srcset="img/cupcakes/lime-extralarge.jpg" media="(min-width: 1000px)">
+          <source srcset="img/cupcakes/lime-large.jpg" media="(min-width: 860px)">
+          <source srcset="img/cupcakes/lime-medium.jpg" media="(min-width: 650px)">
+          <img srcset="img/cupcakes/lime-small.jpg" alt="Lime cupcake">
+        </picture>
       </div>
 
       <div id="about" class="grid_7">
@@ -136,11 +139,11 @@
       </div>
 
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/matchmedia.js"></script>
-    <script src="js/picturefill.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.fittext.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
