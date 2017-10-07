@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="styles/application.css" type="text/css" media="screen">
     <link rel="stylesheet" href="styles/components/navigation_bar.css" type="text/css" media="screen">
     <link rel="stylesheet" href="styles/components/buttons.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles/components/form.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="js/matchmedia.js"></script>
-    <script src="js/picturefill.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
   </head>
 
@@ -38,11 +37,11 @@
 
       <div class="cupcake grid_12">
         <div class="grid_4">
-          <div class="img-container" data-picture data-alt="Avocado Chocolate">
-            <div data-src="img/cupcakes/avocado-small.jpg"></div>
-            <div data-src="img/cupcakes/avocado-medium.jpg" data-media="(min-width: 650px)"></div>
-            <div data-src="img/cupcakes/avocado-large.jpg" data-media="(min-width: 860px)"></div>
-          </div>
+          <picture class="img-container">
+            <source srcset="img/cupcakes/avocado-large.jpg" media="(min-width: 860px)">
+            <source srcset="img/cupcakes/avocado-medium.jpg" media="(min-width: 650px)">
+            <img srcset="img/cupcakes/avocado-small.jpg" alt="Avocato Chocolate">
+          </picture>
         </div>
 
         <div class="grid_8 omega">
@@ -52,7 +51,9 @@
             this cupcake will kick your tastebuds into fiesta mode!
           </p>
 
-          <div class="order_form">
+          <a href="#" class="btn-order-now" data-btn-order-now>Order Now</a>
+
+          <div class="order-form" data-order-form>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input type="hidden" name="cmd" value="_cart">
               <input type="hidden" name="business" value="andrew@teamtreehouse.com">
@@ -88,11 +89,11 @@
 
       <div class="cupcake grid_12">
         <div class="grid_4">
-          <div class="img-container" data-picture data-alt="Bacon Me Crazy">
-            <div data-src="img/cupcakes/bacon-small.jpg"></div>
-            <div data-src="img/cupcakes/bacon-medium.jpg" data-media="(min-width: 650px)"></div>
-            <div data-src="img/cupcakes/bacon-large.jpg" data-media="(min-width: 860px)"></div>
-          </div>
+          <picture class="img-container">
+            <source srcset="img/cupcakes/bacon-large.jpg" media="(min-width: 860px)">
+            <source srcset="img/cupcakes/bacon-medium.jpg" media="(min-width: 650px)">
+            <img srcset="img/cupcakes/bacon-small.jpg" alt="bacon Chocolate">
+          </picture>
         </div>
 
         <div class="grid_8 omega">
@@ -101,7 +102,10 @@
             Our infamous Bacon Cupcake has a deliciously moist vanilla cake, 
             creamy cream cheese icing, topped with bacon and maple glaze.
           </p>
-          <div class="order_form">
+
+          <a href="#" class="btn-order-now" data-btn-order-now>Order Now</a>
+
+          <div class="order-form" data-order-form>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input type="hidden" name="cmd" value="_cart">
               <input type="hidden" name="business" value="andrew@teamtreehouse.com">
@@ -137,20 +141,24 @@
 
       <div class="cupcake grid_12">
         <div class="grid_4">
-          <div class="img-container" data-picture data-alt="Jalapeño So Spicy">
-            <div data-src="img/cupcakes/lime-small.jpg"></div>
-            <div data-src="img/cupcakes/lime-medium.jpg"data-media="(min-width: 650px)"></div>
-            <div data-src="img/cupcakes/lime-large.jpg" data-media="(min-width: 860px)"></div>
-          </div>
+          <picture class="img-container">
+            <source srcset="img/cupcakes/lime-large.jpg" media="(min-width: 860px)">
+            <source srcset="img/cupcakes/lime-medium.jpg" media="(min-width: 650px)">
+            <img srcset="img/cupcakes/lime-small.jpg" alt="lime Chocolate">
+          </picture>
         </div>
 
         <div class="grid_8 omega">
           <h2 class="giga">Jalapeño So Spicy</h2>
+
           <p>
             This spicy cupcake has a chocolatey cake with a kick, creamy vanilla
             lime icing, and topped with a lime wedge.
           </p>
-          <div class="order_form">
+
+          <a href="#" class="btn-order-now" data-btn-order-now>Order Now</a>
+
+          <div class="order-form" data-order-form>
             <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input type="hidden" name="cmd" value="_cart">
               <input type="hidden" name="business" value="andrew@teamtreehouse.com">
@@ -222,7 +230,8 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <script src="js/order.js"></script>
   </body>
 </html>

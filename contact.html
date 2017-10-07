@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="styles/components/buttons.css" type="text/css" media="screen">
     <link rel="stylesheet" href="styles/components/form.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="js/matchmedia.js"></script>
-    <script src="js/picturefill.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
   </head>
   <body>
@@ -39,32 +37,41 @@
       <div class="grid_12 omega">
         <h2 class="giga">Contact Smells Like Bakin'</h2>
         <form class="mail-form" action="contact.php" method="post">
-          <p class="grid_12">
+          <p class="grid_12" data-input-valid=false>
             <label class="grid_12" for="name">Name:</label>
-            <input class="grid_12" name="name" id="name" type="text">
-            <span>Please enter your name</span>
+            <input class="grid_12" name="name" id="name" type="text" data-input>
+            <span class="message" data-input-type="input">
+              Please enter your name
+            </span>
           </p>
 
-          <p class="grid_12">
+          <p class="grid_12" data-input-valid=false>
             <label class="grid_12" for="email">Email:</label>
-            <input class="grid_12" name="email" id="email" type="text">
-            <span>Please enter a valid email address</span>
+            <input class="grid_12" name="email" id="email" type="text" data-input>
+            <span class="message" data-input-type="email">
+              Please enter a valid email address
+            </span>
           </p>
 
-          <p class="grid_12">
+          <p class="grid_12" data-input-valid=false>
             <label class="grid_12" for="subject">Subject:</label>
-            <input class="grid_12" name="subject" id="subject" type="text"> 
-            <span>Please enter your subject</span>
+            <input class="grid_12" name="subject" id="subject" type="text" data-input>
+            <span class="message" data-input-type="input">
+              Please enter your subject
+            </span>
           </p>
 
-          <p class="grid_12">
+          <p class="grid_12" data-input-valid=false>
             <label class="grid_12" for="message">Message</label>
-            <textarea class="grid_12" name="message" id="message"></textarea>
-            <span>Please enter your message</span>
+            <textarea class="grid_12" name="message" id="message" data-input>
+            </textarea>
+            <span class="message" data-input-type="text">
+              Please enter your message
+            </span>
           </p>
 
           <p>
-            <input type="submit" value="Submit" class="btn">
+            <input type="submit" value="Submit" class="btn" data-btn-submit disabled="disabled">
           </p>
         </form>
       </div>
@@ -108,7 +115,9 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
     <script src="js/contact.js"></script>
   </body>
 </html>

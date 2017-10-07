@@ -27,22 +27,17 @@
   height: 150px;
 }
 
-.mail-form span {
+.mail-form .message {
+  display: none;
   padding: 8px 10px;
-  background: #faf3bc;
-  color:#420600;
-}
-
-.mail-form span.valid {
-  background-color: #c0ce51;
-  color: #faf3bc;
-}
-
-.mail-form span.error {
   background-color: #b0240f;
   color: #faf3bc;
 }
 
 .mail-form input[disabled=disabled] {
   background-color: #333;
+}
+
+.order-form {
+  display: none;
 }
