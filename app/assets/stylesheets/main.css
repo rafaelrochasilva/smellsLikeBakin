@@ -3,7 +3,7 @@ body {
   font-weight: 100;
   font-size: 1.125em;
   color: #faf3bc;
-  background: #420600 url('../img/texture/bg-texture.jpg') repeat;
+  background: #420600 url('texture/bg-texture.jpg') repeat;
 }
 
 .img-container img,

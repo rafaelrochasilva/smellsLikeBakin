@@ -1,5 +1,3 @@
-var Bakin = window.Bakin || {};
-
 Bakin.OrderNow = (function() {
   function OrderNow() {
     this.$orderBtn = $('[data-btn-order-now]');
@@ -24,5 +22,3 @@ Bakin.OrderNow = (function() {
 
   return OrderNow;
 }());
-
-new Bakin.OrderNow();

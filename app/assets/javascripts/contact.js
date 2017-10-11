@@ -1,5 +1,3 @@
-var Bakin = window.Bakin || {};
-
 Bakin.Contact = (function() {
   var REGEX_TYPES = {
     'email': /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
@@ -64,5 +62,3 @@ Bakin.Contact = (function() {
 
   return Contact;
 }());
-
-new Bakin.Contact();
