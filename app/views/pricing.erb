@@ -1,0 +1,163 @@
+<div class="grid_12">
+  <h1 class="tera hero">
+    We have a wide variety of delicious desserts that are sure to take 
+    you by surprise!
+  </h1>
+</div>
+
+<div class="cupcake grid_12">
+  <div class="grid_4">
+    <picture class="img-container">
+    <source srcset="<%= image_path 'cupcakes/avocado-large.jpg' %>" media="(min-width: 860px)">
+      <source srcset="<%= image_path 'cupcakes/avocado-medium.jpg' %>" media="(min-width: 650px)">
+        <img srcset="<%= image_path 'cupcakes/avocado-small.jpg' %>" alt="Avocato Chocolate">
+    </picture>
+  </div>
+
+  <div class="grid_8 omega">
+    <h2 class="giga">Avocado Chocolate</h2>
+    <p>
+    Made with chocolate cake, avocado icing, and topped with walnuts, 
+    this cupcake will kick your tastebuds into fiesta mode!
+    </p>
+
+    <a href="#" class="btn-order-now" data-btn-order-now>Order Now</a>
+
+    <div class="order-form" data-order-form>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="andrew@teamtreehouse.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Bacon Cup Cakes">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="10.00">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+          <tr><td><input type="hidden" name="on0" value="Amount">Quantity</td></tr><tr><td>
+              <select name="os0">
+                <option value="Half Dozen">Half Dozen $5.00 USD</option>
+                <option value="Full Dozen">Full Dozen $9.00 USD</option>
+                <option value="Double Dozen">Double Dozen $15.00 USD</option>
+              </select> </td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="option_select0" value="Half Dozen">
+        <input type="hidden" name="option_amount0" value="5.00">
+        <input type="hidden" name="option_select1" value="Full Dozen">
+        <input type="hidden" name="option_amount1" value="9.00">
+        <input type="hidden" name="option_select2" value="Double Dozen">
+        <input type="hidden" name="option_amount2" value="15.00">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="cupcake grid_12">
+  <div class="grid_4">
+    <picture class="img-container">
+    <source srcset="<%= image_path 'cupcakes/bacon-large.jpg' %>" media="(min-width: 860px)">
+      <source srcset="<%= image_path 'cupcakes/bacon-medium.jpg' %>" media="(min-width: 650px)">
+        <img srcset="<%= image_path 'cupcakes/bacon-small.jpg' %>" alt="bacon Chocolate">
+    </picture>
+  </div>
+
+  <div class="grid_8 omega">
+    <h2 class="giga">Bacon Me Crazy</h2>
+    <p>
+    Our infamous Bacon Cupcake has a deliciously moist vanilla cake, 
+    creamy cream cheese icing, topped with bacon and maple glaze.
+    </p>
+
+    <a href="#" class="btn-order-now" data-btn-order-now>Order Now</a>
+
+    <div class="order-form" data-order-form>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="andrew@teamtreehouse.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Bacon Cup Cakes">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="10.00">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+          <tr><td><input type="hidden" name="on0" value="Amount">Quantity</td></tr><tr><td>
+              <select name="os0">
+                <option value="Half Dozen">Half Dozen $5.00 USD</option>
+                <option value="Full Dozen">Full Dozen $9.00 USD</option>
+                <option value="Double Dozen">Double Dozen $15.00 USD</option>
+              </select> </td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="option_select0" value="Half Dozen">
+        <input type="hidden" name="option_amount0" value="5.00">
+        <input type="hidden" name="option_select1" value="Full Dozen">
+        <input type="hidden" name="option_amount1" value="9.00">
+        <input type="hidden" name="option_select2" value="Double Dozen">
+        <input type="hidden" name="option_amount2" value="15.00">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="cupcake grid_12">
+  <div class="grid_4">
+    <picture class="img-container">
+    <source srcset="<%= image_path 'cupcakes/lime-large.jpg' %>" media="(min-width: 860px)">
+      <source srcset="<%= image_path 'cupcakes/lime-medium.jpg' %>" media="(min-width: 650px)">
+        <img srcset="<%= image_path 'cupcakes/lime-small.jpg' %>" alt="lime Chocolate">
+    </picture>
+  </div>
+
+  <div class="grid_8 omega">
+    <h2 class="giga">Jalapeño So Spicy</h2>
+
+    <p>
+    This spicy cupcake has a chocolatey cake with a kick, creamy vanilla
+    lime icing, and topped with a lime wedge.
+    </p>
+
+    <a href="#" class="btn-order-now" data-btn-order-now>Order Now</a>
+
+    <div class="order-form" data-order-form>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="andrew@teamtreehouse.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Bacon Cup Cakes">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="10.00">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+          <tr><td><input type="hidden" name="on0" value="Amount">Quantity</td></tr><tr><td>
+              <select name="os0">
+                <option value="Half Dozen">Half Dozen $5.00 USD</option>
+                <option value="Full Dozen">Full Dozen $9.00 USD</option>
+                <option value="Double Dozen">Double Dozen $15.00 USD</option>
+              </select> </td></tr>
+        </table>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="option_select0" value="Half Dozen">
+        <input type="hidden" name="option_amount0" value="5.00">
+        <input type="hidden" name="option_select1" value="Full Dozen">
+        <input type="hidden" name="option_amount1" value="9.00">
+        <input type="hidden" name="option_select2" value="Double Dozen">
+        <input type="hidden" name="option_amount2" value="15.00">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      </form>
+    </div>
+  </div>
+</div>

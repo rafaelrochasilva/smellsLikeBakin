@@ -31,7 +31,7 @@
   border: 0;
   font-weight: 100;
   font-size: .75em;
-  background: #b22316 url('../../img/texture/texture.png') no-repeat right top;
+  background: #b22316 url('texture/texture.png') no-repeat right top;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;

@@ -1,0 +1,72 @@
+<div id="intro-slider">
+  <div class="grid_12 omega">
+    <div class="intro grid_9">
+      <h1 class="tera" data-fittext>
+        Opposites really do attract, especially in our kitchen! We 
+        combine unexpected flavors that melt together to create ironically
+        delicious desserts.
+      </h1>
+      <p><a href="/pricing" class="btn">Browse Our Cupcakes</a></p>
+    </div>
+
+    <div class="intro-img grid_3 omega">
+      <object class="img-container" 
+              data="<%= image_path 'cartoon/you-bake-me-blush.svg' %>"
+              type="image/svg+xml">
+      </object>
+    </div>
+  </div>
+
+  <div class="grid_12 omega">
+    <div class="intro grid_8">
+      <h1 class="tera" data-fittext>
+        We're kicking taste buds in to high gear from the west to the 
+        east coast with our featured avacodo chocolate cupcake.
+      </h1>
+      <p><a href="/locations" class="btn">View Our Locations</a></p>
+    </div>
+
+    <div class="intro-img grid_4 omega">
+      <object class="img-container"
+              data="<%= image_path 'cartoon/love-at-first-bite.svg' %>"
+              type="image/svg+xml">
+      </object>
+    </div>
+  </div>
+</div>
+
+<div class="featured-cupcake grid_7">
+  <h2 class="giga">Cupcake of the Week</h2>
+  <p>
+  This week’s featured cupcake is the 
+  <a class="avocato" href="#">Avocado Chocolate cupcake</a>. It’s 
+  flavors will kick your taste buds into fiesta mode!
+  </p>
+
+  <div data-featured-video>
+    <iframe src="http://player.vimeo.com/video/50610288?title=0&amp;byline=0&amp;portrait=0"
+            width="400" height="275" frameborder="0" ></iframe>
+  </div>
+</div>
+
+<div class="featured-cupcake grid_5 omega">
+  <h2 class="giga">Fresh Out the Oven</h2>
+  <p>
+  Our newest cupcakes are <a class="avocato" href="#">Bacon Me Crazy</a>
+  and <a class="avocato" href="#">Jalapeño So Spicy</a>.
+  </p>
+
+  <picture class="img-container">
+  <source srcset="<%= image_path 'cupcakes/bacon-extralarge.jpg' %>" media="(min-width: 1000px)">
+    <source srcset="<%= image_path 'cupcakes/bacon-large.jpg' %>" media="(min-width: 860px)">
+      <source srcset="<%= image_path 'cupcakes/bacon-medium.jpg' %>" media="(min-width: 650px)">
+        <img srcset="<%= image_path 'cupcakes/bacon-small.jpg' %>" alt="bacon cupcake">
+  </picture>
+
+  <picture class="img-container">
+  <source srcset="<%= image_path 'cupcakes/lime-extralarge.jpg' %>" media="(min-width: 1000px)">
+    <source srcset="<%= image_path 'cupcakes/lime-large.jpg' %>" media="(min-width: 860px)">
+      <source srcset="<%= image_path 'cupcakes/lime-medium.jpg' %>" media="(min-width: 650px)">
+        <img srcset="<%= image_path 'cupcakes/lime-small.jpg' %>" alt="Lime cupcake">
+  </picture>
+</div>
