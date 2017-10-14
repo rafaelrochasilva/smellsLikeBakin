@@ -7,9 +7,25 @@ Smells Like Bakin is a Cupcake web site sample. It was build in 2013 following [
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Installing
+## Installing
 
-Clone the repository, open the index.html and use it.
+Clone the repository on your local machine and run bundle.
+
+```shell
+git clone git@github.com:rafaelrochasilva/smellsLikeBakin.git
+```
+
+```shell
+bundle install
+```
+
+## Running the server
+The shotgun/thin web app server runs on http://127.0.0.1:9393/ port.
+To run the app, just type the command:
+
+```shell
+shoutgun
+```
 
 ## Built With
 
