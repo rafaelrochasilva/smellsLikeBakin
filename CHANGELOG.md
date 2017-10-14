@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.2] - 2017-10-14
+### Added
+- Add Sinatra
+- Include Readme to show how to use sinatra
+
 ## [0.3.2] - 2017-10-07
 ### Added
 - Use cdn instead of store thirdparty files.
