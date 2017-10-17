@@ -20,10 +20,6 @@ gem 'rake', '~>12.1.0'
 
 gem 'shotgun', '~>0.9.2'
 
-gem 'turbolinks', '~> 2.5', '>= 2.5.3'
-gem 'jquery', '~> 0.0.1'
-gem 'jquery-turbolinks', '~> 2.1'
-
 group :development, :test do
   gem 'rspec', '~>3.6.0'
   gem 'pry', '~>0.11.1'
