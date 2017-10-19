@@ -23,4 +23,6 @@ gem 'shotgun', '~>0.9.2'
 group :development, :test do
   gem 'rspec', '~>3.6.0'
   gem 'pry', '~>0.11.1'
+  gem 'capybara', '~> 2.7', '>= 2.7.1'
+  gem 'poltergeist', '~> 1.10'
 end

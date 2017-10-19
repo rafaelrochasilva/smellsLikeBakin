@@ -8,3 +8,8 @@ require 'rubygems'
 ENV['RACK_ENV'] ||= 'test'
 
 require File.expand_path("../../config/environment", __FILE__)
+
+require 'capybara/rspec'
+require 'capybara/poltergeist'
+
+Capybara.javascript_driver = :poltergeist
