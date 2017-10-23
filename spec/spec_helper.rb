@@ -12,4 +12,17 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 
-Capybara.javascript_driver = :poltergeist
+Capybara.app = Sinatra::Application
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(
+    app,
+    js_errors: false,
+    debug: true,
+    phatomjs_options: ['--load-images=no',
+                       '--ignore-ssl-errors=yes',
+                       '--ssl-protocol=any',
+                       '--proxy-type=socks5',
+                       '--proxy=0.0.0.0:0',
+                       '--debug=true']
+  )
+end

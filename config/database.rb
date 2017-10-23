@@ -3,12 +3,12 @@ if Sinatra::Application.development?
   ActiveRecord::Base.logger = Logger.new(STDOUT)
 end
 
-# Automatically load every file in APP_ROOT/app/models/*.rb, e.g.,
+# Automatically load every file in ROOT_PATH/app/models/*.rb, e.g.,
 #   autoload "Person", 'app/models/person.rb'
 #
 # See http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html
 #
-Dir[APP_ROOT.join('app', 'models', '*.rb')].each do |model_file|
+Dir[ROOT_PATH.join('app', 'models', '*.rb')].each do |model_file|
   filename = File.basename(model_file).gsub('.rb', '')
   autoload ActiveSupport::Inflector.camelize(filename), model_file
 end
@@ -23,6 +23,7 @@ end
 
 # Heroku controls what database we connect to by setting the DATABASE_URL environment variable
 # We need to respect that if we want our Sinatra apps to run on Heroku without modification
+APP_NAME = ROOT_PATH.basename.to_s
 db = URI.parse(ENV['DATABASE_URL'] || "postgres://localhost/#{APP_NAME}_#{Sinatra::Application.environment}")
 
 DB_NAME = db.path[1..-1]

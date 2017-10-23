@@ -1,15 +1,13 @@
 require ::File.expand_path('../config/environment',  __FILE__)
 
-set :app_file, __FILE__
-app = Sinatra::Application
-
 configure do
   # use Rack::Protection
 
   # See: http://www.sinatrarb.com/faq.html#sessions
   enable :sessions
+  set :app_file, __FILE__
   set :session_secret, ENV['SESSION_SECRET'] || 'this is a secret shhhhh'
-  set :views, File.join(app.root, "app", "views")
+  set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 
 helpers do
@@ -30,12 +28,11 @@ map '/assets' do
     config.environment = asset_pipe_line
     config.prefix = '/assets'
     config.digest = true
-    config.debug = true if app.development?
   end
 
   run asset_pipe_line
 end
 
 map '/' do
-  run app
+  run Sinatra::Application
 end
