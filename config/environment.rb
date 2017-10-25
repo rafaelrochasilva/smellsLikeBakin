@@ -25,11 +25,15 @@ require 'uglifier'
 require 'sass'
 require 'execjs'
 
+require 'rspec' if test?
+require 'capybara/rspec' if test?
+require 'capybara/poltergeist' if test?
+
 ROOT_PATH = Pathname.new(File.expand_path('../../', __FILE__))
 
 # Set up the controllers and helpers
 Dir[ROOT_PATH.join('app', 'controllers', '*.rb')].each { |file| require file }
 Dir[ROOT_PATH.join('app', 'helpers', '*.rb')].each { |file| require file }
 
-# Set up the database and models
+# # Set up the database and models
 require ROOT_PATH.join('config', 'database')
