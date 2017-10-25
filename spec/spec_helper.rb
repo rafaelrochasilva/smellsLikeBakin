@@ -14,6 +14,14 @@ include Sprockets::Helpers
 
 Capybara.app = Sinatra::Application
 
+Sprockets::Helpers.configure do |config|
+  asset_pipe_line = Sprockets::Environment.new
+  config.environment = asset_pipe_line
+  config.prefix = '/assets'
+  config.digest = true
+end
+
+
 Capybara.register_driver :poltergeist do |app|
   Capybara::Poltergeist::Driver.new(
     app,

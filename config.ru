@@ -14,6 +14,7 @@ helpers do
   include Sprockets::Helpers
 end
 
+# Maybe it could be used as a rake task
 # Use Asset Pipe Line to minify css and js
 map '/assets' do
   asset_pipe_line = Sprockets::Environment.new
