@@ -29,6 +29,8 @@ require 'rspec' if test?
 require 'capybara/rspec' if test?
 require 'capybara/poltergeist' if test?
 
+require_relative 'asset_pipeline'
+
 ROOT_PATH = Pathname.new(File.expand_path('../../', __FILE__))
 
 # Set up the controllers and helpers
