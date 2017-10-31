@@ -12,6 +12,7 @@ class AssetPipeline
       config.environment = asset_pipe_line
       config.prefix = '/assets'
       config.digest = true
+      config.debug = false
     end
 
     app.helpers(Sprockets::Helpers)
